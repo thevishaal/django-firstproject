@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import Question
+from .models import Question, Choice
 
-admin.site.site_header = "Polls Admin"
-admin.site.index_title = "Amazing Title"
+# admin.site.site_header = "Polls Admin"
+# admin.site.index_title = "Amazing Title"
+
 # Register your models here.
 admin.site.register(Question)
+admin.site.register(Choice)
